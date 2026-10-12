@@ -29,7 +29,7 @@ export default function LoginScreen({ onLogin }) {
   return (
     <KeyboardAvoidingView style={styles.fondo} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
       <View style={styles.tarjeta}>
-        <Text style={styles.logo}>⚽ GolPro Manager</Text>
+        <Text style={styles.logo}>⚽ Futbol 360</Text>
         <Text style={styles.sub}>Inicia sesión para continuar</Text>
 
         <TextInput
