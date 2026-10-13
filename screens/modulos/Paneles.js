@@ -73,7 +73,7 @@ export function DashboardDirectivo() {
 
 const st = StyleSheet.create({
   grilla: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between' },
-  cuadro: { width: '48%', backgroundColor: '#fff', borderWidth: 2, borderRadius: 12, padding: 16, alignItems: 'center', marginBottom: 12 },
+  cuadro: { width: '48%', backgroundColor: colores.tarjeta, borderWidth: 2, borderRadius: 12, padding: 16, alignItems: 'center', marginBottom: 12 },
   numero: { fontSize: 32, fontWeight: 'bold' },
   texto: { color: colores.gris, textAlign: 'center', marginTop: 4 },
 });

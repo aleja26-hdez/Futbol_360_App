@@ -47,12 +47,12 @@ export default function PadreHome({ user, onLogout }) {
 }
 
 const styles = StyleSheet.create({
-  header: { backgroundColor: colores.verde, paddingTop: 50, paddingBottom: 14, paddingHorizontal: 16, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+  header: { backgroundColor: '#04100a', borderBottomWidth: 1, borderBottomColor: colores.borde, paddingTop: 50, paddingBottom: 14, paddingHorizontal: 16, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   hola: { color: '#fff', fontSize: 18, fontWeight: 'bold' },
   rol: { color: '#cfebdd' },
   salirBtn: { borderWidth: 1, borderColor: '#fff', borderRadius: 6, paddingHorizontal: 10, paddingVertical: 5 },
   salir: { color: '#fff', fontSize: 12 },
-  tabsWrap: { paddingVertical: 10, borderBottomWidth: 1, borderBottomColor: colores.borde, backgroundColor: '#fff' },
+  tabsWrap: { paddingVertical: 10, borderBottomWidth: 1, borderBottomColor: colores.borde, backgroundColor: '#04100a' },
   tab: { borderWidth: 1, borderColor: colores.verde, borderRadius: 6, paddingHorizontal: 12, paddingVertical: 8, marginRight: 8 },
   tabActiva: { backgroundColor: colores.verde },
   tabTxt: { color: colores.verde },

@@ -113,9 +113,9 @@ function Enviar({ onEnviada }) {
 
 const st = StyleSheet.create({
   fila: { flexDirection: 'row', alignItems: 'center' },
-  opcion: { borderWidth: 1, borderColor: colores.borde, backgroundColor: '#fff', borderRadius: 10, padding: 12, marginBottom: 6 },
+  opcion: { borderWidth: 1, borderColor: colores.borde, backgroundColor: colores.tarjeta, borderRadius: 10, padding: 12, marginBottom: 6 },
   opcionActiva: { backgroundColor: colores.verde, borderColor: colores.verde },
   opcionTxt: { color: colores.texto },
-  input: { borderWidth: 1, borderColor: colores.borde, backgroundColor: '#fff', borderRadius: 10, padding: 12, fontSize: 16 },
+  input: { borderWidth: 1, borderColor: colores.borde, backgroundColor: colores.tarjeta, borderRadius: 10, padding: 12, fontSize: 16 },
   error: { color: '#c62828', marginVertical: 8 },
 });

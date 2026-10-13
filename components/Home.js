@@ -38,11 +38,11 @@ export default function Home({ user, rolTexto, secciones, onLogout }) {
 }
 
 const s = StyleSheet.create({
-  header: { backgroundColor: colores.verde, paddingTop: 50, paddingBottom: 14, paddingHorizontal: 16, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+  header: { backgroundColor: '#04100a', borderBottomWidth: 1, borderBottomColor: colores.borde, paddingTop: 50, paddingBottom: 14, paddingHorizontal: 16, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'},
   hola: { color: '#fff', fontSize: 18, fontWeight: 'bold' },
   rol: { color: '#cfebdd' },
   salir: { color: '#fff', fontWeight: 'bold' },
-  barra: { backgroundColor: '#fff', borderBottomWidth: 1, borderBottomColor: colores.borde },
+  barra: { backgroundColor: '#04100a', borderBottomWidth: 1, borderBottomColor: colores.borde  },
   pestana: { paddingVertical: 12, paddingHorizontal: 14, borderBottomWidth: 3, borderBottomColor: 'transparent' },
   pestanaActiva: { borderBottomColor: colores.verde },
   pestanaTxt: { color: colores.gris, fontWeight: '600' },

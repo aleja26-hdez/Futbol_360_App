@@ -19,7 +19,7 @@ export default function NotificacionesScreen() {
 }
 
 const styles = StyleSheet.create({
-  card: { backgroundColor: '#fff', borderRadius: 12, padding: 14, marginBottom: 10, borderWidth: 1, borderColor: colores.borde },
+  card: { backgroundColor: colores.tarjeta, borderRadius: 12, padding: 14, marginBottom: 10, borderWidth: 1, borderColor: colores.borde },
   nueva: { borderLeftWidth: 4, borderLeftColor: colores.verde },
   titulo: { fontWeight: 'bold', color: colores.texto },
   msg: { color: colores.texto, marginTop: 4 },

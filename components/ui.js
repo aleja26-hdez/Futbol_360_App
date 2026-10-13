@@ -95,7 +95,7 @@ export function Pantalla({ ruta, renderItem, vacio = 'No hay registros todavía.
 }
 
 const s = StyleSheet.create({
-  tarjeta: { backgroundColor: '#fff', borderRadius: 12, padding: 14, marginBottom: 12, borderWidth: 1, borderColor: colores.borde },
+  tarjeta: { backgroundColor: colores.tarjeta, borderRadius: 12, padding: 14, marginBottom: 12, borderWidth: 1, borderColor: colores.borde },
   nombre: { fontWeight: 'bold', fontSize: 16, color: colores.texto, marginBottom: 4 },
   subtitulo: { fontWeight: 'bold', fontSize: 15, color: colores.verdeOscuro, marginVertical: 8 },
   gris: { color: colores.gris },
@@ -109,7 +109,7 @@ const s = StyleSheet.create({
   botonSec: { borderWidth: 1, borderColor: colores.verde },
   botonTxt: { fontWeight: 'bold', fontSize: 15 },
   segmentos: { flexDirection: 'row', margin: 12, borderRadius: 10, borderWidth: 1, borderColor: colores.verde, overflow: 'hidden' },
-  segmento: { flex: 1, padding: 10, alignItems: 'center', backgroundColor: '#fff' },
+  segmento: { flex: 1, padding: 10, alignItems: 'center', backgroundColor: colores.tarjeta },
   segmentoActivo: { backgroundColor: colores.verde },
   segmentoTxt: { fontWeight: 'bold', color: colores.verde },
   vacio: { textAlign: 'center', color: colores.gris, marginTop: 30 },

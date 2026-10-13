@@ -71,13 +71,13 @@ export default function EscuelaScreen() {
 }
 
 const styles = StyleSheet.create({
-  card: { backgroundColor: '#fff', borderRadius: 10, padding: 16, borderWidth: 1, borderColor: colores.borde, marginBottom: 16 },
+  card: { backgroundColor: colores.tarjeta, borderRadius: 10, padding: 16, borderWidth: 1, borderColor: colores.borde, marginBottom: 16 },
   nombre: { fontSize: 28, fontWeight: 'bold', color: colores.texto, marginBottom: 10 },
   fila: { color: colores.texto, marginBottom: 6, fontSize: 15 },
   etiqueta: { fontWeight: 'bold' },
   link: { color: '#0d6efd', textDecorationLine: 'underline' },
   titulo: { fontSize: 22, fontWeight: 'bold', color: colores.texto, marginBottom: 10 },
-  foto: { backgroundColor: '#fff', borderRadius: 10, borderWidth: 1, borderColor: colores.borde, marginBottom: 14, overflow: 'hidden' },
+  foto: { backgroundColor: colores.tarjeta, borderRadius: 10, borderWidth: 1, borderColor: colores.borde, marginBottom: 14, overflow: 'hidden' },
   img: { width: '100%', height: 200 },
   pie: { padding: 12, color: colores.texto },
   error: { color: '#c62828', marginBottom: 10 },

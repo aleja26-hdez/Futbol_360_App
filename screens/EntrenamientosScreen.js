@@ -81,7 +81,7 @@ export default function EntrenamientosScreen() {
 
 const styles = StyleSheet.create({
   titulo: { fontSize: 22, fontWeight: 'bold', color: colores.texto, marginBottom: 10 },
-  card: { backgroundColor: '#fff', borderRadius: 10, padding: 14, marginBottom: 10, borderWidth: 1, borderColor: colores.borde },
+  card: { backgroundColor: colores.tarjeta, borderRadius: 10, padding: 14, marginBottom: 10, borderWidth: 1, borderColor: colores.borde },
   fila: { color: colores.texto, marginBottom: 3, fontSize: 15 },
   etiqueta: { fontWeight: 'bold', color: colores.texto },
   torneo: { fontSize: 17, fontWeight: 'bold', color: colores.verdeOscuro, marginBottom: 4 },

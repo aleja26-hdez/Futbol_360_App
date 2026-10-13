@@ -21,7 +21,7 @@ export default function AsistenciaScreen() {
 }
 
 const styles = StyleSheet.create({
-  fila: { flexDirection: 'row', alignItems: 'center', backgroundColor: '#fff', borderRadius: 10, padding: 14, marginBottom: 8, borderWidth: 1, borderColor: colores.borde },
+  fila: { flexDirection: 'row', alignItems: 'center', backgroundColor: colores.tarjeta, borderRadius: 10, padding: 14, marginBottom: 8, borderWidth: 1, borderColor: colores.borde },
   texto: { color: colores.texto },
   obs: { color: colores.gris, fontSize: 12, marginTop: 2 },
 });

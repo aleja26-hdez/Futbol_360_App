@@ -102,11 +102,11 @@ export default function PagosScreen() {
 }
 
 const styles = StyleSheet.create({
-  resumen: { flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#fff', borderRadius: 12, padding: 14, marginBottom: 14, borderWidth: 1, borderColor: colores.borde },
+  resumen: { flexDirection: 'row', justifyContent: 'space-between', backgroundColor: colores.tarjeta, borderRadius: 12, padding: 14, marginBottom: 14, borderWidth: 1, borderColor: colores.borde },
   resumenItem: { alignItems: 'center', flex: 1 },
   resumenNum: { fontSize: 16, fontWeight: 'bold', color: colores.texto },
   resumenTxt: { fontSize: 11, color: colores.gris, marginTop: 2 },
-  card: { backgroundColor: '#fff', borderRadius: 12, padding: 14, marginBottom: 12, borderWidth: 1, borderColor: colores.borde },
+  card: { backgroundColor: colores.tarjeta, borderRadius: 12, padding: 14, marginBottom: 12, borderWidth: 1, borderColor: colores.borde },
   cardHead: { flexDirection: 'row', alignItems: 'center', marginBottom: 10 },
   nombre: { fontWeight: 'bold', fontSize: 16, color: colores.texto },
   mes: { color: colores.gris },

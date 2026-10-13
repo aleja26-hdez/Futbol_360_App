@@ -133,7 +133,7 @@ function Planilla({ entrenamiento, onVolver }) {
           </Tarjeta>
         )}
       />
-      <View style={{ padding: 16, backgroundColor: '#fff', borderTopWidth: 1, borderTopColor: colores.borde }}>
+      <View style={{ padding: 16, backgroundColor: colores.tarjeta, borderTopWidth: 1, borderTopColor: colores.borde }}>
         {error ? <Text style={{ color: '#c62828' }}>{error}</Text> : null}
         <Boton texto="Guardar asistencia" onPress={guardar} cargando={guardando} deshabilitado={guardando} />
       </View>
