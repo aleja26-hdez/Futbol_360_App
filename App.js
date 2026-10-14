@@ -7,6 +7,7 @@ import EntrenadorHome from './screens/EntrenadorHome';
 import DirectivoHome from './screens/DirectivoHome';
 import { apiGet, getToken, logout, setAlCaducarSesion } from './api';
 import { colores } from './theme';
+import { registrarPush, quitarPush } from './push';
 
 export default function App() {
   const [user, setUser] = useState(null);
@@ -16,10 +17,11 @@ export default function App() {
     setUser(await apiGet('/api/usuarios/me/'));
   };
 
-  const cerrarSesion = async () => {
-    await logout();
-    setUser(null);
-  };
+ const cerrarSesion = async () => {
+  await quitarPush();
+  await logout();
+  setUser(null);
+};
 
   useEffect(() => {
     setAlCaducarSesion(() => setUser(null));
@@ -33,6 +35,10 @@ export default function App() {
       }
     })();
   }, []);
+
+  useEffect(() => {
+  if (user) registrarPush();
+}, [user?.id]);
 
   let pantalla;
   if (iniciando) {

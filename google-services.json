@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "230380647286",
+    "project_id": "futbol-360-4bd19",
+    "storage_bucket": "futbol-360-4bd19.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230380647286:android:95535ebdb94b781c0b4057",
+        "android_client_info": {
+          "package_name": "com.futbol360.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY2Nq4LsY5RkDBRaXkOR9eEEBaniNy3LI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
