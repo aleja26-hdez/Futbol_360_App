@@ -6,6 +6,7 @@ import EntrenamientosScreen from './EntrenamientosScreen';
 import NotificacionesScreen from './NotificacionesScreen';
 import EscuelaScreen from './EscuelaScreen';
 import { colores } from '../theme';
+import Llaves from './modulos/Llave';
 
 const TABS = [
   { id: 'pagos', label: 'Estado de cuenta', Comp: PagosScreen },
@@ -13,6 +14,7 @@ const TABS = [
   { id: 'entrenos', label: 'Entrenamientos y torneos', Comp: EntrenamientosScreen },
   { id: 'avisos', label: 'Notificaciones', Comp: NotificacionesScreen },
   { id: 'escuela', label: 'La escuela', Comp: EscuelaScreen },
+  { id: 'llaves', label: 'Llaves de torneos', Comp: Llaves },
 ];
 
 export default function PadreHome({ user, onLogout }) {

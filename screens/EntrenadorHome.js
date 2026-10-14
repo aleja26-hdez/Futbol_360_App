@@ -4,6 +4,7 @@ import { Jugadores, Entrenamientos } from './modulos/listas';
 import Asistencia from './modulos/Asistencia';
 import Notificaciones from './modulos/Notificaciones';
 import { EscuelaInfo } from './modulos/Escuelas';
+import Llaves from './modulos/Llave';
 
 const SECCIONES = [
   { clave: 'panel', titulo: 'Mi panel', componente: PanelEntrenador },
@@ -12,6 +13,7 @@ const SECCIONES = [
   { clave: 'asistencia', titulo: 'Asistencia', componente: Asistencia },
   { clave: 'notificaciones', titulo: 'Notificaciones', componente: Notificaciones },
   { clave: 'escuela', titulo: 'La escuela', componente: EscuelaInfo },
+  { clave: 'llaves', titulo: 'Torneos', componente: Llaves },
 ];
 
 export default function EntrenadorHome({ user, onLogout }) {
