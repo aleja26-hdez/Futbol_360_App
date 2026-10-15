@@ -1,1 +1,1 @@
-export const API_URL = 'http://192.168.40.144:8000';
+export const API_URL = 'https://futbol360-production.up.railway.app';

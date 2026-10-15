@@ -7,7 +7,7 @@ import EntrenadorHome from './screens/EntrenadorHome';
 import DirectivoHome from './screens/DirectivoHome';
 import { apiGet, getToken, logout, setAlCaducarSesion } from './api';
 import { colores } from './theme';
-import { registrarPush, quitarPush } from './push';
+import { registrarPush } from './push';
 
 export default function App() {
   const [user, setUser] = useState(null);
@@ -17,11 +17,12 @@ export default function App() {
     setUser(await apiGet('/api/usuarios/me/'));
   };
 
- const cerrarSesion = async () => {
-  await quitarPush();
-  await logout();
-  setUser(null);
-};
+  // El token de notificaciones NO se borra al cerrar sesión:
+  // así el aviso llega aunque la sesión esté cerrada.
+  const cerrarSesion = async () => {
+    await logout();
+    setUser(null);
+  };
 
   useEffect(() => {
     setAlCaducarSesion(() => setUser(null));
@@ -36,9 +37,10 @@ export default function App() {
     })();
   }, []);
 
+  // Al iniciar sesión se registra (o se reasigna) el token de este celular
   useEffect(() => {
-  if (user) registrarPush();
-}, [user?.id]);
+    if (user) Promise.resolve(registrarPush()).catch(() => {});
+  }, [user?.id]);
 
   let pantalla;
   if (iniciando) {
@@ -71,7 +73,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   centro: { flex: 1, justifyContent: 'center', alignItems: 'center', padding: 24, backgroundColor: colores.fondo },
-  titulo: { fontSize: 20, fontWeight: 'bold', marginBottom: 8 },
+  titulo: { fontSize: 20, fontWeight: 'bold', marginBottom: 8, color: colores.texto },
   texto: { textAlign: 'center', color: colores.gris, marginBottom: 16 },
   link: { color: colores.verde, fontWeight: 'bold' },
 });
